@@ -4,8 +4,10 @@ import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div dir="rtl">
+    <div dir="rtl" className="bg-gray-100">
       <Navbar />
+      <Modal />
+      <Modal />
       <Modal />
     </div>
   );
