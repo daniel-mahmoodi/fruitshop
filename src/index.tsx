@@ -8,6 +8,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <div className='bg-gray-100'>
+      <App />
+    </div>
   </React.StrictMode>
 );

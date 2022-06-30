@@ -1,16 +1,22 @@
 // interface Props {
 
 // }
-import {FaMapMarkerAlt} from "react-icons/fa";
-import {FaUser} from "react-icons/fa";
-import {BsCart4} from "react-icons/bs";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
+import { TiShoppingCart } from "react-icons/ti";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50  border-gray-200 px-2 sm:px-4 py-0 rounded dark:bg-gray-800">
-      <div className="bg-blue-500 text-zinc-50 px-2 h-12 container flex flex-wrap justify-between items-center mx-auto">
-       <div className="flex"><FaMapMarkerAlt className="mx-1 p-0" /> شهر انتخابی: <strong className="mx-1">کرج</strong></div>
-       <div className="mx-2 flex"><FaUser className="mx-1"/>ثبت نام یا ورود</div>
+    <nav className="sticky top-0 left-0 right-0 z-50 border-gray-200 rounded dark:bg-gray-800">
+      <div className="bg-blue-500 text-zinc-50 px-2 h-12 container mx-auto flex flex-wrap justify-between items-center ">
+        <div className="flex">
+          <FaMapMarkerAlt className="mx-1 p-0 w-5 h-5" /> شهر انتخابی:{" "}
+          <strong className="mx-1">کرج</strong>
+        </div>
+        <div className="mx-2 flex">
+          <FaUser className="mx-1 p-0 w-5 h-5" />
+          ثبت نام یا ورود
+        </div>
       </div>
       <div className="container h-24 bg-white flex flex-wrap justify-between items-center mx-auto">
         <a href="https://flowbite.com/" className="flex items-center">
@@ -19,14 +25,8 @@ const Navbar = () => {
             Flowbite
           </span>
         </a>
-        <div className="flex md:order-2">
-          {/* <button
-            type="button"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Get started
-          </button> */}
-          <BsCart4/>
+
+        <div className="flex md:order-2 md:text-blue-500">
           <button
             data-collapse-toggle="mobile-menu-4"
             type="button"
@@ -61,6 +61,11 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
+        <div className="flex items-center border-2 border-blue-500 rounded-2xl mx-2 text-blue-500">
+          <TiShoppingCart className="mr-2 p-0 w-8 h-8" />
+          <div className="m-2 text-xl p-0">8</div>
+        </div>
+
         <div
           className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
           id="mobile-menu-4"
